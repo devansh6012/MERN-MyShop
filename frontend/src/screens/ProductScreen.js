@@ -15,11 +15,11 @@ function ProductScreen({ match }) {
         }
 
         fetchProducts()
-    },[])
+    },[match])
 
   return (
     <>
-        <Link className='btn btn-light my-3'>Go Back</Link>
+        <Link to ='/' className='btn btn-light my-3'>Go Back</Link>
         <Row>
             <Col md={6}>
                 <Image src={product.image} alt={product.name} fluid />
